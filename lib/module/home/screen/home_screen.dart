@@ -4,6 +4,7 @@ import 'package:digikala/module/home/screen/component/offer_box_widget.dart';
 import 'package:digikala/module/home/screen/component/search_app_bar.dart';
 import 'package:digikala/module/home/screen/component/search_widget.dart';
 import 'package:digikala/module/home/screen/component/slider.dart';
+import 'package:digikala/module/home/screen/component/suggestion_box.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,13 +17,16 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           color: Colors.red,
-          child: Column(
-            children: [
-              SearchAppBar(),
-              AppSlider(),
-              CategoryList(),
-              OfferBoxWidget()
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SearchAppBar(),
+                AppSlider(),
+                CategoryList(),
+                OfferBoxWidget(),
+                SuggestionBox(),
+              ],
+            ),
           ),
         ),
       ),
