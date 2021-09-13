@@ -49,9 +49,9 @@ flutter:
 
 
   fonts:
-    - family: IranSans
+    - family: IranYekan
       fonts:
-        - asset: IRANYekanMobileRegular.ttf
+        - asset: res/Fonts/IRANYekanMobileRegular.ttf
         - asset: res/Fonts/IRANYekanMobileBold.ttf
         - weight: 700
   # To add assets to your application, add an assets section, like this:
