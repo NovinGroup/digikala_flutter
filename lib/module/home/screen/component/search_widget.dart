@@ -18,10 +18,10 @@ class SearchWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
-              Expanded(child: Center()),
-              Text("جستجو در"),
+              Icon(Icons.search, size: 32,),
               SizedBox(width: 8,),
-              Icon(Icons.search, size: 32,)
+              Text("جستجو در"),
+              Expanded(child: Center()),
             ],
           ),
         ),
