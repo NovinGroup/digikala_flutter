@@ -17,6 +17,24 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black87,
+        items: [
+          BottomNavigationBarItem(
+              label: "خانه",
+              icon: Icon(Icons.home_outlined),
+              activeIcon: Icon(Icons.home)),
+          BottomNavigationBarItem(
+              label: "خانه",
+              icon: Icon(Icons.home_outlined),
+              activeIcon: Icon(Icons.home)),
+          BottomNavigationBarItem(
+              label: "خانه",
+              icon: Icon(Icons.home_outlined),
+              activeIcon: Icon(Icons.home)),
+        ],
+        elevation: 10,
+      ),
       body: SafeArea(
         child: Container(
           color: Colors.red,
