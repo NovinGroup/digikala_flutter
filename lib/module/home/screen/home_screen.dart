@@ -1,6 +1,7 @@
 import 'package:digikala/component/custom_app_bar.dart';
 import 'package:digikala/module/home/screen/component/banner_widget.dart';
 import 'package:digikala/module/home/screen/component/category_list.dart';
+import 'package:digikala/module/home/screen/component/column_list_widget.dart';
 import 'package:digikala/module/home/screen/component/offer_box_widget.dart';
 import 'package:digikala/module/home/screen/component/search_app_bar.dart';
 import 'package:digikala/module/home/screen/component/search_widget.dart';
@@ -28,7 +29,8 @@ class HomeScreen extends StatelessWidget {
                 OfferBoxWidget(),
                 SuggestionBox(),
                 BannerWidget(),
-                VerticalListWidget()
+                VerticalListWidget(),
+                ColumnListWidget(),
               ],
             ),
           ),
