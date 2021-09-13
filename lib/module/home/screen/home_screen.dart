@@ -6,6 +6,7 @@ import 'package:digikala/module/home/screen/component/search_app_bar.dart';
 import 'package:digikala/module/home/screen/component/search_widget.dart';
 import 'package:digikala/module/home/screen/component/slider.dart';
 import 'package:digikala/module/home/screen/component/suggestion_box.dart';
+import 'package:digikala/module/home/screen/component/vertical_list_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,7 @@ class HomeScreen extends StatelessWidget {
                 OfferBoxWidget(),
                 SuggestionBox(),
                 BannerWidget(),
+                VerticalListWidget()
               ],
             ),
           ),
