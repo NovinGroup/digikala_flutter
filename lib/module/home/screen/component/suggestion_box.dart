@@ -9,7 +9,7 @@ class SuggestionBox extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(28),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("data"),
           Text("data"),
