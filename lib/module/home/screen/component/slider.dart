@@ -22,22 +22,35 @@ class AppSlider extends StatelessWidget {
           items: _imagesUri.map((i) {
             return Builder(
               builder: (BuildContext context) {
-                return Container(
-                  width: MediaQuery.of(context).size.width,
-                  margin: EdgeInsets.symmetric(horizontal: 5.0),
-                  decoration: BoxDecoration(
-                      color: Colors.amber,
-                      image: DecorationImage(
-                        image: AssetImage(i),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.circular(12)),
-                );
+                return RoundImage(i);
               },
             );
           }).toList(),
         ),
       ),
+    );
+  }
+}
+
+class RoundImage extends StatelessWidget {
+  final String address;
+
+  const RoundImage(this.address, {
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      margin: EdgeInsets.symmetric(horizontal: 5.0),
+      decoration: BoxDecoration(
+          color: Colors.amber,
+          image: DecorationImage(
+            image: AssetImage(address),
+            fit: BoxFit.cover,
+          ),
+          borderRadius: BorderRadius.circular(12)),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:digikala/module/home/screen/component/slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class BannerWidget extends StatelessWidget {
       padding: const EdgeInsets.all(23.0),
       child: Container(
         height: 120,
-        color: Colors.black54,
+        child: RoundImage("res/Images/banner_1.jpg"),
       ),
     );
   }
