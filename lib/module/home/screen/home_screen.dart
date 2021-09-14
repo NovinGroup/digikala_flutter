@@ -43,7 +43,8 @@ class HomeScreen extends StatelessWidget {
               children: [
                 SearchAppBar(),
                 AppSlider(),
-                CategoryList()
+                CategoryList(),
+                OfferBoxWidget()
               ],
             ),
           ),
