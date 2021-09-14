@@ -42,7 +42,8 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 SearchAppBar(),
-                AppSlider()
+                AppSlider(),
+                CategoryList()
               ],
             ),
           ),
