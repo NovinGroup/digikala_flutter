@@ -41,14 +41,7 @@ class HomeScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SearchAppBar(),
-                AppSlider(),
-                CategoryList(),
-                OfferBoxWidget(),
-                SuggestionBox(),
-                BannerWidget(),
-                VerticalListWidget(),
-                ColumnListWidget(),
+                SearchAppBar()
               ],
             ),
           ),

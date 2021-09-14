@@ -14,7 +14,7 @@ class SearchAppBar extends StatelessWidget {
             BoxShadow(
                 color: Colors.black12,
                 blurRadius: 5.0,
-                offset: Offset(0.0, 10)
+                offset: Offset(0.0, 5)
             )
           ],
           color: Colors.white
