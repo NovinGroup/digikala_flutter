@@ -37,11 +37,12 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          color: Colors.red,
+          color: Colors.white,
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SearchAppBar()
+                SearchAppBar(),
+                AppSlider()
               ],
             ),
           ),

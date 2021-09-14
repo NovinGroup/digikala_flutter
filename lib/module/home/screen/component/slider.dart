@@ -3,7 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AppSlider extends StatelessWidget {
-  const AppSlider({Key? key}) : super(key: key);
+  AppSlider({Key? key}) : super(key: key);
+
+  final List<String> _imagesUri = [
+    "res/Images/banner_1.jpg",
+    "res/Images/banner_2.jpg",
+    "res/Images/banner_3.jpg",
+    "res/Images/banner_4.jpg",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -12,16 +19,19 @@ class AppSlider extends StatelessWidget {
       child: Container(
         child: CarouselSlider(
           options: CarouselOptions(height: 180.0),
-          items: [1,2,3,4,5].map((i) {
+          items: _imagesUri.map((i) {
             return Builder(
               builder: (BuildContext context) {
                 return Container(
-                    width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.symmetric(horizontal: 5.0),
-                    decoration: BoxDecoration(
-                        color: Colors.amber
-                    ),
-                    child: Text('text $i', style: TextStyle(fontSize: 16.0),)
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.symmetric(horizontal: 5.0),
+                  decoration: BoxDecoration(
+                      color: Colors.amber,
+                      image: DecorationImage(
+                        image: AssetImage(i),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(12)),
                 );
               },
             );
