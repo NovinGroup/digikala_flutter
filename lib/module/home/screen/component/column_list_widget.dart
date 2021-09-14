@@ -5,21 +5,51 @@ import 'package:flutter/material.dart';
 class ColumnListWidget extends StatelessWidget {
   const ColumnListWidget({Key? key}) : super(key: key);
 
-  final double height = 170;
+  final double height = 350;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(23.0),
       child: Container(
-        height: 1000,
-        child: GridView.count(
-          crossAxisCount: 2,
+        height: 600,
+        child: ListView(
           children: [
-            ProductWidget(height),
-            ProductWidget(height),
-            ProductWidget(height),
-            ProductWidget(height),
+            Container(
+              height: height,
+              child: Row(children: [
+                Expanded(child: ProductWidget(height),),
+                Expanded(child: ProductWidget(height),),
+              ],),
+            ),
+            Container(
+              height: height,
+              child: Row(children: [
+                Expanded(child: ProductWidget(height),),
+                Expanded(child: ProductWidget(height),),
+              ],),
+            ),
+            Container(
+              height: height,
+              child: Row(children: [
+                Expanded(child: ProductWidget(height),),
+                Expanded(child: ProductWidget(height),),
+              ],),
+            ),
+            Container(
+              height: height,
+              child: Row(children: [
+                Expanded(child: ProductWidget(height),),
+                Expanded(child: ProductWidget(height),),
+              ],),
+            ),
+            Container(
+              height: height,
+              child: Row(children: [
+                Expanded(child: ProductWidget(height),),
+                Expanded(child: ProductWidget(height),),
+              ],),
+            ),
           ],
         ),
       ),

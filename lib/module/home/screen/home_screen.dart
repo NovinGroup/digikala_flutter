@@ -48,6 +48,9 @@ class HomeScreen extends StatelessWidget {
                 BannerWidget(),
                 SuggestionBox(),
                 OfferBoxWidget(Colors.green, "res/Images/offerbox_2.png"),
+                VerticalListWidget(),
+                SuggestionBox(),
+                ColumnListWidget()
               ],
             ),
           ),
