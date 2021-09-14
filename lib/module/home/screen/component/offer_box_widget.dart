@@ -3,7 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class OfferBoxWidget extends StatelessWidget {
-  const OfferBoxWidget({Key? key}) : super(key: key);
+  final Color color;
+  final String imageAssetUri;
+
+  const OfferBoxWidget(this.color, this.imageAssetUri, {Key? key}) : super(key: key);
 
   final double height = 170;
 
@@ -13,7 +16,7 @@ class OfferBoxWidget extends StatelessWidget {
       padding: const EdgeInsets.only(top: 18.0),
       child: Container(
         height: 400,
-        color: Colors.red,
+        color: color,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
           child: ListView(
@@ -21,7 +24,7 @@ class OfferBoxWidget extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(28.0),
-                child: Image.asset("res/Images/offerbox_1.png"),
+                child: Image.asset(imageAssetUri),
               ),
               ProductWidget(height),
               ProductWidget(height),
