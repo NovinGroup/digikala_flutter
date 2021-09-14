@@ -45,7 +45,9 @@ class HomeScreen extends StatelessWidget {
                 AppSlider(),
                 CategoryList(),
                 OfferBoxWidget(),
-                BannerWidget()
+                BannerWidget(),
+                SuggestionBox(),
+                OfferBoxWidget(),
               ],
             ),
           ),
